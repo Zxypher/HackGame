@@ -1,0 +1,115 @@
+0
+0
+0
+0
+0
+
+text-based hacker adventure game
+
+main info storyline w/ big companies to hack for vital info
+hacking consists of using functions to access and stay connected long enough to get the information needed. if caught, the connection is terminated and they can no longer access that location
+
+turn based, security takes a turn and player takes a turn
+security has three turns after process activated to get user's IP, once it has the full IP it will shut that IP down. if proxy'd, only get 1/3 of the real user IP after disconnecting proxy
+
+'hub' level gives a shop to get new/better functions, passwords, proxy's, locations, re-access locations by paying off other hackers to reset your proxy setting
+
+encrypted files = story
+access logs = passwords and proxy's
+transaction logs = money
+
+Story : resentful ex-employee bent on taking down corrupt company
+
+
+money system	---
+   ideas
+
+getting transaction logs nets money, and spending it in the hub will give you better stuff
+bigger companies hide their logs well, but pay out huge
+smaller companies don't have much security, but they don't have much in terms of money
+
+prices
+ping  v2 - 100cr - extra info on locations
+accessv2 - 250cr - connect to lv2 access locations
+      v3 - 300cr - lv3
+crack	 - 500cr - force access locations, alert security
+      v2 - 250cr - lv2 locations
+      v3 - 300cr - lv3 locations, lv1 locations cracked with no penalty
+proxy	 - 300cr - connection buffer, not immediately disconnected when security activates
+freeze	 - 600cr - delay all timed actions and security at a location by 1 turn (getInfo, ping, access unhindered)
+      v2 - 500cr - delay all security actions at a location by 1 turn
+reset location access - 200 cr
+passwords - 100cr
+      lv2 - 200cr
+      lv3 - 300cr
+side locations - 250cr per
+
+3850 total upgrades cost, incl side locations
+
+5000 total credits?
+
+300 starting cr from tutorial
+300 friend location
+700 antihacker location
+1500 bank location
+200 grunt location
+600 science location
+500 security location
+900 CEO
+0 government, final level
+
+
+heat system	---
+   ideas
+
+security, after being alerted, will attempt to find your IP, it takes three turns
+if frozen v2, will take one turn more to find the IP
+if proxy'd, after the third turn, security resets 
+disconnect before security disconnects you, you can come back. 
+security force-disconnects you, you'll need to pay off another hacker to get back in
+
+
+
+skill system	---
+   ideas
+
+* = starting with
+*ping	- find available paths
+*getInfo- get passwords, files, and money; get info on the current location/chosen location
+*access	- move to a location/safely pass a firewall(requires a password)
+ crack	- force through a firewall and alert security, tough firewalls need a password
+ proxy	- dodge a security shutdown, resets location, if a special IP  is found, can login under that proxy for less security hassle (better than being locked out perm, 3 uses before IP ban)
+ freeze	- stop security from locking you out, stops you from doing any timed actions
+ disconnect - stop all actions, lose all progress, security resets
+
+   application
+
+location system	---
+   ideas
+
+3 levels of access
+
+-10 locations-
+
+-tutorial area 'testing server'
+-hub - shop, safe zone to connect to other areas, hint system
+
+5 main storyline missions
+-Company's grunt terminal
+-Company's research terminal
+-Company's security terminal
+-Company CEO terminal
+-Government terminal
+
+3 side missions
+-friend's terminal
+-antihacker's terminal
+-bank terminal
+
+obstacles	---
+   ideas
+
+security - end connection if under alert, notified by 'there's an antivirus scanning that folder'
+firewalls - no access unless cracked or accessed with password, 3 levels of access
+	passwords - 'Keys' interchangeable except based on access level. lv 1 keys only on lv 1 firewalls, etc.
+shortcuts - 'wallmasters,' send you to another folder in the location (often backwards, sometimes forwards)
